@@ -15,7 +15,13 @@ h1{
 .winner{
     display: flex;
     justify-content: center;
-    visibility: hidden;
+    padding-top: 1rem;
+    font-size: 30px;
+    font-weight: 600;
+    color: #931F1D;
+}
+.hide{
+    display: none;
 }
 
 
@@ -39,17 +45,18 @@ h1{
     gap: 10px;
    
 }
-#btn-box{
+.btn-box{
     height: 18vmin;
     width: 18vmin;
     border: none;
     border-radius: 1rem;
     background-color: #B6C197;
     box-shadow: 0 0 1rem rgb(116, 115, 115);
+    color : black;
     font-size:x-large;
     font-weight: 700;
 }
-#btn-box:hover{
+.btn-box:hover{
     background-color: rgba(198, 212, 120, 0.701);
 }
 
