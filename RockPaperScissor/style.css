@@ -25,6 +25,7 @@ img{
     width: 24vmin;
     border-radius: 8rem;
     object-fit: cover;
+    border: 5px solid black;
 }
 img:hover{
     opacity: 0.75;
@@ -62,8 +63,8 @@ img:hover{
     margin-top: 5rem;
 }
 #msg{
-    background-color: green;
-    font-size: 1.5rem;
+    background-color: rgb(0, 128, 107);
+    font-size: 4vmin;
     display: inline;
     padding: 1rem;
     border-radius: 1rem;
