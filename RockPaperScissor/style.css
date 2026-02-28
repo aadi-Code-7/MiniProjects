@@ -70,3 +70,21 @@ img:hover{
     border-radius: 1rem;
     color : wheat;
 }
+
+.reset{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+#reset-btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+#reset-btn{
+    background-color: rgb(95, 145, 3);
+    border: none;
+    height: 5vmin;
+    width: 15vmin;
+    color: whitesmoke;
+    border-radius: 4rem;
+}
