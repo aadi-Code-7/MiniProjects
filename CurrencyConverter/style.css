@@ -1,0 +1,76 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(131, 160, 62, 0.952);
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    background-color: rgb(215, 215, 138);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+h1{
+    margin-bottom: 2rem;
+}
+
+.amount p{
+    padding-bottom: 0.4rem;
+    font-size: larger;
+}
+#amtValue{
+    border: none;
+    outline: none;
+    height: 7vmin;
+    width: 100%;
+    font-size: large;
+    border-radius: 1rem;
+    padding-left: 0.5rem;
+}
+
+.dropDown{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.selectContainer{
+    height: 5vmin;
+    display: flex;
+    width: auto;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    padding: 0 0.7rem 0 0.5rem;
+    
+}
+.selectContainer select{
+    border: none;
+    outline: none;
+    background-color: rgb(215, 215, 138);
+}
+.selectContainer select:hover{
+    cursor: pointer;
+}
+.msg{
+    margin: 1.5rem 0 2.5rem 0;
+}
+#btn{
+    height: 3rem;
+    background-color: #af4d98;
+    width: 100%;
+    border: none;
+    color: white;
+    border-radius: 1rem;
+}
+#btn:hover{
+    background-color: #b75da2;
+    cursor: pointer;
+}

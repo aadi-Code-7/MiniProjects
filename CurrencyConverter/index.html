@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    
+    <div class="mainContainer">
+        <div class="container">
+            <div class="heading">
+                <h1>Currency Converter</h1>
+            </div>
+            
+            <form>
+                <div class="amount">
+                    <p>Enter Amount</p>
+                    <input type="text" name="amount" id="amtValue">
+                </div>
+                <div class="dropDown">
+                    <div class="from">
+                        <p>From</p>
+                        <div class="selectContainer">
+                            <img src="https://flagsapi.com/IN/flat/64.png" alt="Country-Map">
+                            <select name="currency" class="currency">
+                                <option value="IND">IND</option>
+                                <option value="USD">USD</option>
+                                <option value="AUD">AUD</option>
+                                <option value="NEP">NEP</option>
+                                <option value="EUR">EUR</option>
+                            </select>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    <div class="to">
+                        <p>To</p>
+                        <div class="selectContainer">
+                            <img src="https://flagsapi.com/NP/flat/64.png" alt="Country-Map">
+                            <select name="currency" class="currency">
+                                <option value="IND">IND</option>
+                                <option value="USD">USD</option>
+                                <option value="AUD">AUD</option>
+                                <option value="NEP">NEP</option>
+                                <option value="EUR">EUR</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="msg">
+                    <p>1 IND = 1.6 NEP</p>
+                </div>
+
+                <div class="button">
+                    <button id="btn">Get exchange rate</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
