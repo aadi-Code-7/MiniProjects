@@ -11,12 +11,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 70vh;
 }
 .container{
     background-color: rgb(215, 215, 138);
     padding: 2rem;
     border-radius: 2rem;
+    width: 350px; 
 }
 h1{
     margin-bottom: 2rem;
@@ -49,13 +50,14 @@ h1{
     border: 1px solid gray;
     border-radius: 1rem;
     padding: 0 0.7rem 0 0.5rem;
-    
 }
+
 .selectContainer select{
     border: none;
     outline: none;
     background-color: rgb(215, 215, 138);
 }
+
 .selectContainer select:hover{
     cursor: pointer;
 }
