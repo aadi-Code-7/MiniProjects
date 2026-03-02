@@ -17,7 +17,7 @@ body{
     background-color: rgb(215, 215, 138);
     padding: 2rem;
     border-radius: 2rem;
-    width: 350px; 
+    /* width: 350px;  */
 }
 h1{
     margin-bottom: 2rem;
@@ -60,6 +60,16 @@ h1{
 
 .selectContainer select:hover{
     cursor: pointer;
+}
+
+i{
+    padding: 0.6rem;
+}
+i:hover{
+    cursor: pointer;
+    background-color: rgb(197, 195, 195);
+    border-radius: 50%;
+    opacity: 0.4;
 }
 .msg{
     margin: 1.5rem 0 2.5rem 0;
