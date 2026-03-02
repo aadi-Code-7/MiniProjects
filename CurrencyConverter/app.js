@@ -8,10 +8,15 @@ const msg = document.querySelector(".msg");
 // const apiKey = "8b2732f9279c1632371cb646";
 // const BASE_URL = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/INR`;
 
+for(let country in countryName){
+    console.log(countryName[country]);
+}
+
 for(let select of dropDowns){
     for(let currCode in countryList){
         let newOption = document.createElement("option");
-        newOption.innerText = currCode;
+        // let country = countryName[currCode];
+        newOption.innerText = countryName[currCode];
         newOption.value = currCode;
         if(select.name === "currencyFrom" && currCode === "INR"){
             newOption.selected = "selected";
@@ -75,8 +80,28 @@ btn.addEventListener("click", async(evt) => {
 
 
 
+const exchange = document.querySelector("#exchange");
 
+const exchangeCurrency = (fromCurrency,toCurrency) => {
 
+    let selectFrom = document.getElementById("selectFrom");
+    let selectTo = document.getElementById("selectTo");
+
+    // console.log(selectFrom.value);
+    // console.log(selectTo.value);
+    let temp = selectFrom.value;
+    selectFrom.value = selectTo.value;
+    selectTo.value = temp;
+    // console.log(selectFrom.value);
+    // console.log(selectTo.value);
+
+    updateFlag(selectFrom);
+    updateFlag(selectTo);
+
+    btn.click();
+}
+
+exchange.addEventListener("click", exchangeCurrency);
 
 
 
