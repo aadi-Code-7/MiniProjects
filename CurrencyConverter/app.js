@@ -82,7 +82,7 @@ btn.addEventListener("click", async(evt) => {
 
 const exchange = document.querySelector("#exchange");
 
-const exchangeCurrency = (fromCurrency,toCurrency) => {
+const exchangeCurrency = () => {
 
     let selectFrom = document.getElementById("selectFrom");
     let selectTo = document.getElementById("selectTo");
